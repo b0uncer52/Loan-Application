@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/blogstyle.css">
+		<title>Loan Application</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<section>
+			First Name: <input type="text" name="firstname" size="20" maxlength="20" required><br>
+			Middle Initial: <input type="text" name="middleInit" size="1" maxlength="1" required><br>
+			Last Name: <input type="text" name="surname" size="30" maxlength="30" required><br>
+			Address: <input type="text" name="address" size="50" maxlength="50" required><br>
+			Occupation: <input type="text" name="occupation" size="30" maxlength="30" required><br>
+			Employer: <input type="text" name="employer" size="30" maxlength="30" required><br>
+			Employer Address: <input type="text" name="empAddress" size="50" maxlength="50" required><br>
+			Type of Loan: 
+			<select name="typeOfLoan">
+				<option value="Co">Commercial</option>
+				<option value="Re">Real Estate</option>
+				<option value="Pe">Personal</option>
+				<option value="Mo">Mortgage</option>
+			</select><br>
+			Requested Loan Amount: <input type="number" name="loanAmount" min="0" max="1000000" step="1" required><br>
+			Loan Length: <input type="radio" name="loanLength" value="5yr">5 years
+			<input type="radio" name="loanLength" value="15yr">15 years
+			<input type="radio" name="loanLength" value="30yr">30 years<br>
+			Special Conditions: 
+			<input type="checkbox" name="conditions" value="downPayment">Down Payment
+			<input type="checkbox" name="conditions" value="outOfState">Out of State Resident
+			<input type="checkbox" name="conditions" value="married">Married
+			<input type="checkbox" name="conditions" value="coSign">Co-signer<br>
+			Additional Comments: <br>
+			<textarea name="comment" rows="5" cols="50"></textarea><br>
+			E-mail: <input type="email" name="email" required><br>
+			Telephone: <input type="tel" name="tel" id="tel" required><br>
+			Linked-In: <input type="url" name="url"><br>
+		</section>
+	</body>
+</html>
